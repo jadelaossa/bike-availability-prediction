@@ -4,13 +4,16 @@ from typing import List
 HYPHEN_E_DOT = '-e .'
 
 def get_requirements(file_path:str) -> List[str]:
-    """Returns a list of requirements.
+    """Returns a list of requirements read from a file.
+    
+    This function reads a file containing a list of requirements, with each requirement on a separate line. 
+    It removes any newline characters and returns a list of cleaned requirements.
 
     Args:
-        file_path (str): _description_
+        file_path (str): The path to the file containing the requirements.
 
     Returns:
-        List[str]: _description_
+        List[str]: A list of requirements.
     """
     requirements = []
 
