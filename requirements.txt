@@ -2,4 +2,5 @@ numpy
 pandas
 seaborn
 streamlit
+jinja2
 -e .
