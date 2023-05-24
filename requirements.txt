@@ -3,4 +3,5 @@ pandas
 seaborn
 streamlit
 jinja2
--e .
+tqdm
+# -e .
