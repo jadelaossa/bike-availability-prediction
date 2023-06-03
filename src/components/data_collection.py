@@ -5,7 +5,7 @@ from src.logger import logging
 
 i2m = list(zip(range(1, 13), ['Gener', 'Febrer', 'Marc', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre']))
 
-for year in [2022, 2021, 2020, 2019]:
+for year in [2023, 2022, 2021, 2020, 2019]:
     if not os.path.exists(f'data/raw/bicing_stations_status/{year}'):
         os.makedirs(f'data/raw/bicing_stations_status/{year}', exist_ok=True)
         
