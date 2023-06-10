@@ -7,4 +7,5 @@ tqdm
 ipywidgets
 missingno
 scikit-learn
+holidays
 # -e .
