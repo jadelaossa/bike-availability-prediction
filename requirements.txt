@@ -7,5 +7,9 @@ tqdm
 ipywidgets
 missingno
 scikit-learn
+xgboost
+feature-engine
+hyperopt
+yellowbrick
 holidays
 # -e .
