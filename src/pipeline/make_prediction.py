@@ -19,14 +19,14 @@ bicing = (metadata
           .merge(meteo_stats, on=['month', 'day'], how='left', validate='many_to_one')
 )
 
-bicing_pl = load_object(r'models\features_transformation_pipeline.pkl')
+bicing_pl = load_object(r'models\pipe_20230619_0720.pkl')
 X_sample = bicing_pl.transform(bicing)
 
-model = load_object(r'models\model.pkl')
+model = load_object(r'models\model_full_20230619_0750.pkl')
 
 y_pred = model.predict(X_sample)
 
 metadata_pred = (pd.DataFrame(y_pred)
                  .reset_index()
                  .rename(columns={0: 'percentage_docks_available'})
-).to_csv(r'src\pipeline\artifacts\metadata_pred.csv', index=False)
+).to_csv(r'src\pipeline\artifacts\metadata_pred_full_20230619_0750.csv', index=False)
