@@ -7,7 +7,7 @@ The project focuses on predicting the availability of docked bikes at various bi
 
 ## Structure of the repository
 
-The directory structure of your new project looks like this: 
+The project directory looks like this: 
 
 ```
 ├── README.md
@@ -52,7 +52,7 @@ To set up the project, follow these steps:
 ```bash
 git clone https://github.com/jadelaossa/bike-availability-prediction.git
 ```
-- Create and activate a virtual enviroment:
+- Create and activate virtual enviroment:
 
 ```bash
 conda create -n bike-availability-prediction python=3.9
