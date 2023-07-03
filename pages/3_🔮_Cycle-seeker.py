@@ -11,6 +11,13 @@ COLUMNS_KEEP = ['station_id', 'month', 'day', 'hour', 'ctx_1', 'ctx_2', 'ctx_3',
 COLUMNS_DROP = ['post_code', 'lat', 'lon', 'capacity', 'max_temp', 'min_temp', 'avg_rel_humidity','avg_atm_pressure', 
                 'global_solar_rad', 'avg_wind_direction', 'max_wind_speed', 'max_streak_wind_direction', 'avg_wind_speed']
 
+st.set_page_config(
+    page_title='Bike Availability prediction',
+    page_icon='🚴‍♂️',
+)
+
+st.sidebar.markdown('Check out the source code [here](https://github.com/jadelaossa/bike-availability-prediction)')
+
 # Function to load the necessary data
 @st.cache_data
 def load_data():
@@ -36,7 +43,12 @@ def get_time():
     
     month = current_datetime.month
     day = current_datetime.day
-    hour_plus = current_datetime.hour + 1
+    hour = current_datetime.hour
+    
+    if hour == 23:
+        hour_plus = 0
+    else:
+        hour_plus = hour + 1
     
     return month, day, hour_plus
 
@@ -48,8 +60,8 @@ month_default, day_default, hour_default = get_time()
 
 def main():
 
-    # App title:
-    st.title('Cycle-seeker :crystal_ball:')
+    # Page title:
+    st.title('🔮 Cycle-seeker')
     st.markdown('_DISCOVER BIKE AVAILABILITY BEFORE YOU GO! Because empty bike stations are no fun!_')
     st.markdown('<br>', unsafe_allow_html=True)  # Insert a line break
 
@@ -150,6 +162,6 @@ def main():
     
         # Display the predicition
         st.success(f'The predicted availability at the selected station is {y_pred * 100:.2f}%')
-        
+
 if __name__ == '__main__':
     main()
