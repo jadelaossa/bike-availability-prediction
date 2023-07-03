@@ -81,7 +81,7 @@ In this project, we applied several machine learning algorithms to predict bike 
 
 This project was developed by:
 
-- Dorleta Orúe-Echeverría Iglesias
+- Dorleta Orúe-Echevarría Iglesias
 - María Alejandra Zalles Hoyos
 - Patricia Merchán Guedea
 - Javier Alejandro de la Ossa Fernández

@@ -20,7 +20,7 @@ st.markdown('<br>', unsafe_allow_html=True)  # Insert a line break
 
 st.markdown('## Contributors')
 st.markdown('This project was developed by:')
-st.markdown('- Dorleta Orúe-Echeverría Iglesias')
+st.markdown('- Dorleta Orúe-Echevarría Iglesias')
 st.markdown('- María Alejandra Zalles Hoyos')
 st.markdown('- Patricia Merchán Guedea')
 st.markdown('- Javier Alejandro de la Ossa Fernández')
