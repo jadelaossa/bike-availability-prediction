@@ -12,8 +12,12 @@ The project directory looks like this:
 ```
 ├── README.md
 │
-├── app.py                  <- Script to run a web app created with Streamlit.
+├── 1_🏠_Home.py            <- Script to run a multi-page web app created with Streamlit.
 │
+├── pages                   <- Secondary pages of the web app.
+│   ├── 2_📊_EDA.py
+│   └── 3_🔮_Cycle-seeker.py
+│    
 ├── data
 │   ├── processed           <- The final, canonical data sets for modeling.
 │   └── raw                 <- The original, immutable data dump.
